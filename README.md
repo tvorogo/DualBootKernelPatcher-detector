@@ -26,12 +26,19 @@ Output:
 - `Boot image clean`
 ## Build (Linux x86_64)
 ```bash
-gcc detectoror.c -O2 -o detector_x86
+gcc detector.c -O2 -static -o detector_x86
 ```
 ## Build (Linux ARM64 / aarch64)
 ```bash
-aarch64-linux-gnu-gcc detector.c -O2 -o detector_arm64
+aarch64-linux-gnu-gcc detector.c -static -O2 -o detector_arm64
 ```
+
+## Thanks for
+[Project-Aloha](https://github.com/Project-Aloha) for its [DBKP](https://github.com/Project-Aloha/DualBootKernelPatcher)
+[Woa-Project](https://github.com/WOA-Project) for its [SDDBKIP](https://github.com/WOA-Project/SurfaceDuoDualBootKernelImagePatcher)
+[Remtrik](github.com/Remtrik) for the tip on how this can be implemented
+[Daniel](https://github.com/Daniel224455) for one tip
+[WoA Helper](https://github.com/n00b69/woa-helper/) for the opportunity to test my abilities
 
 
 License
