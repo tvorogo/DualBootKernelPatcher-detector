@@ -1,3 +1,6 @@
+> [!WARNING]
+> TEST BRANCH MAY CAN NOT WORK
+
 # DBKP Detector
 
 A small command‑line tool that checks whether a boot image has been modified by  
@@ -26,11 +29,22 @@ Output:
 - `Boot image clean`
 ## Build (Linux x86_64)
 ```bash
-gcc detector.c -O2 -static -o detector_x86
+x86_64-linux-musl-cross/bin/x86_64-linux-musl-gcc detector.c -static -Os -o detector_x86
 ```
 ## Build (Linux ARM64 / aarch64)
 ```bash
-aarch64-linux-gnu-gcc detector.c -static -O2 -o detector_arm64
+aarch64-linux-musl-gcc detector.c -static -Os -o detector_arm64
+```
+> [!TIP]
+> For Build debug ver:
+
+## Build (Linux x86_64)
+```bash
+x86_64-linux-musl-cross/bin/x86_64-linux-musl-gcc debug.c -static -Os -o debug_x86
+```
+## Build (Linux ARM64 / aarch64)
+```bash
+aarch64-linux-musl-gcc debug.c -static -Os -o debug
 ```
 
 ## Thanks for
