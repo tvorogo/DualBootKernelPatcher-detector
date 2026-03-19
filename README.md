@@ -32,6 +32,7 @@ gcc detector.c -O2 -static -o detector_x86
 ```bash
 aarch64-linux-gnu-gcc detector.c -static -O2 -o detector_arm64
 ```
+---
 
 ## Thanks for
 [Project-Aloha](https://github.com/Project-Aloha) for its [DBKP](https://github.com/Project-Aloha/DualBootKernelPatcher)
