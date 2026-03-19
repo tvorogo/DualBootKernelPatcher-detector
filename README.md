@@ -35,11 +35,11 @@ aarch64-linux-gnu-gcc detector.c -static -O2 -o detector_arm64
 ---
 
 ## Thanks for
-[Project-Aloha](https://github.com/Project-Aloha) for its [DBKP](https://github.com/Project-Aloha/DualBootKernelPatcher)
-[Woa-Project](https://github.com/WOA-Project) for its [SDDBKIP](https://github.com/WOA-Project/SurfaceDuoDualBootKernelImagePatcher)
-[Remtrik](github.com/Remtrik) for the tip on how this can be implemented
-[Daniel](https://github.com/Daniel224455) for one tip
-[WoA Helper](https://github.com/n00b69/woa-helper/) for the opportunity to test my abilities
+- [Project-Aloha](https://github.com/Project-Aloha) for its [DBKP](https://github.com/Project-Aloha/DualBootKernelPatcher)
+- [Woa-Project](https://github.com/WOA-Project) for its [SDDBKIP](https://github.com/WOA-Project/SurfaceDuoDualBootKernelImagePatcher)
+- [Remtrik](github.com/Remtrik) for the tip on how this can be implemented
+- [Daniel](https://github.com/Daniel224455) for one tip
+- [WoA Helper](https://github.com/n00b69/woa-helper/) for the opportunity to test my abilities
 
 
 License
