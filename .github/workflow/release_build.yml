@@ -1,0 +1,35 @@
+name: Build Detector
+
+on:
+  push:
+    branches: [ test ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: musl
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y musl-tools gcc-aarch64-linux-gnu musl-dev
+
+      - name: Build x86
+        run: |
+          x86_64-linux-musl-gcc detector.c -static -Os -o detector_x86
+
+      - name: Build ARM64
+        run: |
+          aarch64-linux-musl-gcc detector.c -static -Os -o detector_arm64
+
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: detector-binaries
+          path: |
+            detector_x86
+            detector_arm64
